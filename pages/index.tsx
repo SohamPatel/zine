@@ -1,13 +1,17 @@
 import type { NextPage } from "next";
 
-import { Editor } from "../components/Editor/Editor";
+import { Navbar } from "components/Navbar/Navbar";
+import { Editor } from "components/Editor/Editor";
+import { Footer } from "components/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <nav>Nav</nav>
-      <Editor />
-      <footer>Footer</footer>
+      <Navbar />
+      <main>
+        <Editor />
+      </main>
+      <Footer />
     </div>
   );
 };
